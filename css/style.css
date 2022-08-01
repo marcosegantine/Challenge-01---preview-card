@@ -1,0 +1,147 @@
+/* font1 = monteserrat
+font2 = fraunces */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Montserrat:wght@500;700&display=swap');
+
+*, img, div, h1, p, button, span, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(228, 12%, 48%);
+}
+.container-main {
+  display: flex;
+}
+
+@media (max-width:720px) {
+  
+  .container-main {
+    flex-direction: column;    
+  }
+}
+
+.container {
+    max-width: 350px;
+}
+
+@media (max-width:720px) {
+  .container {
+    max-width: 375px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.container-img>img {
+  width: 100%;
+  display: block;
+  border-radius: 10px 0 0 10px;
+}
+
+.container-img img:last-child{
+  display: none;
+}
+
+@media (max-width:720px) {
+  .container-img img:first-child{
+    display: none;
+  }
+
+  .container-img img:last-child{
+    display: block;
+  }
+
+  .container-img>img {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.container-content {
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  padding: 30px;
+}
+
+.container>p:nth-child(1){
+  font-family:'Montserrat', 'sans-serif'; 
+  text-transform: uppercase;
+  margin-bottom: 10 px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-size: 0.875em;
+}git init
+
+.container-content h1 {
+  padding: 20px 0 30px 0;
+  font-size: 3em;
+  font-family: 'Fraunces', 'serif';
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+
+@media (max-width:720px){
+  .container-content {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+  }
+
+  .container-content h1 {
+    font-size: 2em;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+
+  .container-content p {
+    color: hsl(228, 12%, 48%);
+    opacity: .8;
+    font-size: 14px;
+    font-family: 'Montserrat', 'sans-serif';
+  }
+}
+
+.price {
+  display: flex;
+  margin: 20px 0 ;
+  align-items: center;
+}
+
+.price p {
+  font-size: 2em;
+  font-family: 'Fraunces', 'serif';
+  color: hsl(158, 36%, 37%);
+  padding-right: 20px;
+}
+
+.price span {
+  font-family: 'Montserrat', 'sans-serif';;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background: hsl(158, 36%, 37%);
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.125em;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: hsl(158, 39%, 20%);
+  transition: all .3s;
+}
+.btn img {
+  margin-right: 10px;
+}
+
+
